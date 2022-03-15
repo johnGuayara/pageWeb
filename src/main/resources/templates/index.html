@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Presentacion</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" type="text/script"></script>
+    <link rel="stylesheet" href="../static/index.css" type="text/css" th:href="@{/index.css}" />
+</head>
+<body ng-app="myApp" controller="myCtrl">
+    <header class="container-header">
+        <nav>
+            <div class="nav-left">
+                <figure>
+                    <img src="" alt="Logo" class="logo">
+                </figure>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li>
+                        <a href="index">INICIO</a>
+                    </li>
+                    <li>
+                        <a th:href="@{https://m.facebook.com/jaider.mejia.378?ref=bookmarks}" target="_blank">Facebook</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section-container">
+            <div class="info-container" ng-init="name='john'">
+                <h1 ng-bind="name">John Jaider Guayara Mejia</h1>
+                <h3>Presentacion</h3>
+                <p>Hola,Mi nombre es John Jaider Guayara Mejia,Soy un programador junior ¿Por que me comenzo a gustar la programacion?,la respuesta es por que a mi megusta mucho los videojuegos y tambiem diferentes paguinas web que me gustan mucho,y me puse a la tarea de como funcionaban o de como la hacian y me tope con la programacion y desde ahi comenze mi carrera como programador primero estudiando en el SENA y despues aprendiendo con la empresa donde trabajo</p>
+                <h2>Lenguajes de programacion Especializado</h2>
+               <ul th:each="ldp:${lenguajes}">
+                   <li th:text="${ldp}"></li>
+               </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul class="footer-left">
+            <li><a href="">Sobre Nosotros</a></li>
+            <li><a href="">Politica de Privacidad</a></li>
+            <li><a href="">Terminos y condiciones</a></li>
+        </ul>
+        <ul class="footer-right">
+                <li>
+                    <figure>
+                        <a th:href="@{https://m.facebook.com/jaider.mejia.378?ref=bookmarks}" target="_blank"><img th:src="@{../static/logo-incons/facebook.png}"alt="logo-facebook"></a>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="@{https://www.youtube.com/channel/UCXK8q6jN2fl7BHuJW_bsW4Q}" target="-blank"><img th:src='@{../static/logo-incons/youtube.png}'  alt="logo-youtube"></a>
+                    </figure>
+                </li>
+        </ul>    
+</footer>
+<script src="./index.js" th:href="@{/index.js}"></script>
+</body>
+</html>

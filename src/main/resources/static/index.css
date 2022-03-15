@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 30px;
+    height: 100%;
+    background-color: black;
+}
+.logo{
+    width: 100px;
+}
+.nav-left,
+.nav-right{
+    display: flex;
+}
+.nav-right ul{
+   display: flex;
+   align-items: center;
+}
+.nav-right ul li{
+    padding: 12px;
+}
+.nav-right ul li a{
+    color: gray;
+    font-size: 1.8rem;
+}
+/*.input-container{
+    width: 180px;
+    border-radius: 100px;
+    border: 1px solid rgb(95, 99, 104);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-container input{
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #5f6368;
+    font-size: 1.4rem;
+}
+.anime-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    gap: 1px;
+    place-content: center;
+    padding: 10px 20px ;
+}
+.card-anime{
+    width: 140px;
+}
+.card-anime > img{
+    width: 180px;
+    height: 180px;
+    border-radius: 25px;
+    border: 1px solid #222;
+    object-fit: cover;
+}*/
+.section-container{
+    display: flex;
+    justify-content:center;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    padding-top: 80px;
+    overflow: hidden;
+    font-size: 2.0rem;
+   width: 80vw;
+}
+a p{
+    color: black;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+}
+footer ul{
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+    padding-left: 0px;
+}
+footer .footer-right{
+    justify-self: right;
+}
+footer ul li a{
+    margin: 10px;
+    color: #5f6368;
+}
+footer img{
+    width: 40px;
+    height: 40px;
+}
+.cap-ul{
+    width: 50vw;
+    height: 50vh;
+    background-color:darkgray;
+}
+.cap-ul ul li{
+    display: flex;
+    flex-direction: column;
+    
+}
+.cap-ul a{
+    font-size: 2.0rem;
+    color: black;
+    background-color: lightsteelblue;
+}
+.view-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
